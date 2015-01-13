@@ -1,3 +1,6 @@
 [submodule "mediawiki"]
 	path = mediawiki
 	url = https://gerrit.wikimedia.org/r/p/mediawiki/core.git
+[submodule "specialization/extensions/GoogleLogin"]
+	path = specialization/extensions/GoogleLogin
+	url = https://git.wikimedia.org/git/mediawiki/extensions/GoogleLogin.git
