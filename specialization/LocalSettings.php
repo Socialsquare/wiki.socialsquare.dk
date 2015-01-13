@@ -131,6 +131,8 @@ $wgWhitelistRead = array( 'Special:GoogleLogin' );
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
 $wgArticlePath = "/$1";
 
+# Load the MarkdownExtraParser
+require_once("$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php");
+
 # Load appended local settings.
 require('LocalSettings-prepended.php');
-

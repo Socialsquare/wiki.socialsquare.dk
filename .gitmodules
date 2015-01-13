@@ -7,3 +7,6 @@
 [submodule "specialization/extensions/GoogleAPIClient"]
 	path = specialization/extensions/GoogleAPIClient
 	url = https://git.wikimedia.org/git/mediawiki/extensions/GoogleAPIClient.git
+[submodule "specialization/extensions/MarkdownExtraParser"]
+	path = specialization/extensions/MarkdownExtraParser
+	url = https://github.com/Rican7/MediaWiki-MarkdownExtraParser
