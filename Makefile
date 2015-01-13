@@ -6,5 +6,14 @@ clean:
 submodule-update:
 	git submodule update --init
 
-dist:
-	cp -r ./mediawiki ./dist
+dist: dist-make-dir dist-mediawiki dist-specialization
+
+dist-make-dir:
+	mkdir ./dist
+
+dist-mediawiki:
+	cp -r ./mediawiki/* ./dist
+
+dist-specialization:
+	cp -r ./specialization/* ./dist
+
