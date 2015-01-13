@@ -141,5 +141,7 @@ $wgExtraNamespaces = array(
 	201 => "Role_talk"
 );
 
+$wgRestrictDisplayTitle = false;
+
 # Load appended local settings.
 require('LocalSettings-prepended.php');
