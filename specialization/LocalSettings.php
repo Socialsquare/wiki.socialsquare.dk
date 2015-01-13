@@ -132,7 +132,8 @@ $wgWhitelistRead = array( 'Special:GoogleLogin' );
 $wgArticlePath = "/$1";
 
 # Load the MarkdownExtraParser
-require_once("$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php");
+// TODO: Make this Markdown parser use Composer.
+//require_once("$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php");
 
 # Load appended local settings.
 require('LocalSettings-prepended.php');
