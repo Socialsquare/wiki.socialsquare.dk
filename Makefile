@@ -15,7 +15,7 @@ dist-mediawiki:
 	cp -r ./mediawiki/* ./dist
 
 dist-specialization:
-	cp -r ./specialization/* ./dist
+	cp -r ./specialization/. ./dist
 
 composer-install:
 	cd ./dist && composer install
