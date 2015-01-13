@@ -18,7 +18,8 @@
 	"require": {
 		"php": ">=5.3.2",
 		"psr/log": "1.0.0",
-		"mediawiki/chameleon-skin": "~1.1"
+		"mediawiki/chameleon-skin": "~1.1",
+		"michelf/php-markdown": "1.4.1"
 	},
 	"require-dev": {
 		"phpunit/phpunit": "*"

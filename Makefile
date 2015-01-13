@@ -6,7 +6,7 @@ clean:
 submodule-update:
 	git submodule update --init
 
-dist: dist-make-dir dist-mediawiki dist-specialization composer-install
+dist: dist-make-dir dist-mediawiki dist-specialization composer-install composer-dist
 
 dist-make-dir:
 	mkdir -p ./dist
@@ -19,3 +19,6 @@ dist-specialization:
 
 composer-install:
 	cd ./dist && composer install
+
+composer-dist:
+	cp ./dist/vendor/michelf/php-markdown/Michelf/Markdown.php ./dist/extensions/MarkdownExtraParser/markup.php
