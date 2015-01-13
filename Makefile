@@ -4,7 +4,7 @@ clean:
 	rm -rf ./dist
 
 submodule-update:
-	git submodule update
+	git submodule update --init
 
 dist:
 	cp -r ./mediawiki ./dist
