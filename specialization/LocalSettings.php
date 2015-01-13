@@ -134,6 +134,12 @@ $wgArticlePath = "/$1";
 # Load the MarkdownExtraParser
 // TODO: Make this Markdown parser use Composer.
 //require_once("$IP/extensions/MarkdownExtraParser/MarkdownExtraParser.php");
+$wgExtraNamespaces = array(
+	100 => "Circle",
+	101 => "Circle_talk",
+	200 => "Role",
+	201 => "Role_talk"
+);
 
 # Load appended local settings.
 require('LocalSettings-prepended.php');
