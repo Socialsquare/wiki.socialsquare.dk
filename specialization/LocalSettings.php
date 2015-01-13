@@ -125,6 +125,7 @@ require_once("$IP/extensions/GoogleLogin/GoogleLogin.php");
 
 $wgGLAllowAccountCreation = true;
 $wgGLReplaceMWLogin = true;
+$wgGLAllowedDomains = array( 'socialsquare.dk' );
 $wgWhitelistRead = array( 'Special:GoogleLogin' );
 
 # Load appended local settings.
