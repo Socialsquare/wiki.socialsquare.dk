@@ -128,6 +128,9 @@ $wgGLReplaceMWLogin = true;
 $wgGLAllowedDomains = array( 'socialsquare.dk' );
 $wgWhitelistRead = array( 'Special:GoogleLogin' );
 
+## https://www.mediawiki.org/wiki/Manual:Short_URL
+$wgArticlePath = "/$1";
+
 # Load appended local settings.
 require('LocalSettings-prepended.php');
 

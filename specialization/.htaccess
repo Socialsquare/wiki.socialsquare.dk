@@ -1,0 +1,11 @@
+## http://www.mediawiki.org/wiki/Manual:Short_URL/Apache
+ 
+# Enable the rewrite engine
+RewriteEngine On
+
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-f
+RewriteCond %{DOCUMENT_ROOT}%{REQUEST_URI} !-d
+RewriteRule ^(.*)$ %{DOCUMENT_ROOT}/index.php [L]
+ 
+# Redirect / to Main Page
+RewriteRule ^/*$ %{DOCUMENT_ROOT}/index.php [L]
