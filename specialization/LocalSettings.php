@@ -119,4 +119,7 @@ $egChameleonExternalStyleModules = array(
     __DIR__ . '/less/socialsquare.less' => $wgScriptPath . '/less',
 );
 
+# GoogleLogin plugin, enabling single sign-on.
+require_once("$IP/extensions/GoogleAPIClient/GoogleAPIClient.php");
 require_once("$IP/extensions/GoogleLogin/GoogleLogin.php");
+

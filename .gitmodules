@@ -4,3 +4,6 @@
 [submodule "specialization/extensions/GoogleLogin"]
 	path = specialization/extensions/GoogleLogin
 	url = https://git.wikimedia.org/git/mediawiki/extensions/GoogleLogin.git
+[submodule "specialization/extensions/GoogleAPIClient"]
+	path = specialization/extensions/GoogleAPIClient
+	url = https://git.wikimedia.org/git/mediawiki/extensions/GoogleAPIClient.git
