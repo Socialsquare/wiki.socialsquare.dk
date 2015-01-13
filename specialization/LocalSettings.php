@@ -15,6 +15,7 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
+# Load secrets
 require('LocalSettings-secrets.php');
 
 ## Uncomment this to disable output compression
@@ -27,11 +28,7 @@ $wgSitename = "Socialsquare";
 ## For more information on customizing the URLs
 ## (like /w/index.php/Page_title to /wiki/Page_title) please see:
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
-$wgScriptPath = "";
 $wgScriptExtension = ".php";
-
-## The protocol and server name to use in fully-qualified URLs
-$wgServer = "http://wiki.socialsquare.dk";
 
 ## The relative URL path to the skins directory
 $wgStylePath = "$wgScriptPath/skins";
@@ -116,3 +113,10 @@ $wgDefaultSkin = "";
 # End of automatically generated settings.
 # Add more configuration options below.
 
+# Set the theme
+$wgDefaultSkin = "chameleon";
+$egChameleonExternalStyleModules = array(
+    __DIR__ . '/less/socialsquare.less' => $wgScriptPath . '/less',
+);
+
+require_once("$IP/extensions/GoogleLogin/GoogleLogin.php");
