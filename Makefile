@@ -21,4 +21,4 @@ composer-install:
 	cd ./dist && composer install
 
 composer-dist:
-	cp ./dist/vendor/michelf/php-markdown/Michelf/Markdown.php ./dist/extensions/MarkdownExtraParser/markup.php
+	cp ./dist/vendor/michelf/php-markdown/Michelf/Markdown.php ./dist/extensions/MarkdownExtraParser/markdown.php
