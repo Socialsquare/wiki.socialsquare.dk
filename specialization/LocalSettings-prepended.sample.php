@@ -28,6 +28,3 @@ $wgScriptPath = "";
 ## The protocol and server name to use in fully-qualified URLs
 $wgServer = "http://wiki.socialsquare.dk";
 
-## Credentials for the GoogleLogin extenstion.
-$wgGLSecret = '________________________';
-$wgGLAppId = '_____________________________________________.apps.googleusercontent.com';

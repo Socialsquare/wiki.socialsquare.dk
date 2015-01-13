@@ -1,2 +1,3 @@
 dist/
-specialization/LocalSettings-secrets.php
+specialization/LocalSettings-appended.php
+specialization/LocalSettings-prepended.php

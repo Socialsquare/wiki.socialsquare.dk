@@ -15,8 +15,8 @@ if ( !defined( 'MEDIAWIKI' ) ) {
 	exit;
 }
 
-# Load secrets
-require('LocalSettings-secrets.php');
+# Load appended local settings.
+require('LocalSettings-appended.php');
 
 ## Uncomment this to disable output compression
 # $wgDisableOutputCompression = true;
@@ -122,4 +122,11 @@ $egChameleonExternalStyleModules = array(
 # GoogleLogin plugin, enabling single sign-on.
 require_once("$IP/extensions/GoogleAPIClient/GoogleAPIClient.php");
 require_once("$IP/extensions/GoogleLogin/GoogleLogin.php");
+
+$wgGLAllowAccountCreation = true;
+$wgGLReplaceMWLogin = true;
+$wgWhitelistRead = array( 'Special:GoogleLogin' );
+
+# Load appended local settings.
+require('LocalSettings-prepended.php');
 
