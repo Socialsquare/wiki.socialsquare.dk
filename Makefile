@@ -6,10 +6,10 @@ clean:
 submodule-update:
 	git submodule update --init
 
-dist: dist-make-dir dist-mediawiki dist-specialization
+dist: dist-make-dir dist-mediawiki dist-specialization composer-install
 
 dist-make-dir:
-	mkdir ./dist
+	mkdir -p ./dist
 
 dist-mediawiki:
 	cp -r ./mediawiki/* ./dist
@@ -17,3 +17,5 @@ dist-mediawiki:
 dist-specialization:
 	cp -r ./specialization/* ./dist
 
+composer-install:
+	cd ./dist && composer install
