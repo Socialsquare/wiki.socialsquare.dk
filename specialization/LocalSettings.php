@@ -129,7 +129,7 @@ $wgGLAllowedDomains = array( 'socialsquare.dk' );
 $wgWhitelistRead = array( 'Special:GoogleLogin' );
 
 ## https://www.mediawiki.org/wiki/Manual:Short_URL
-$wgArticlePath = "/$1";
+$wgArticlePath = "$wgScriptPath/$1";
 
 # Load the MarkdownExtraParser
 // TODO: Make this Markdown parser use Composer.
@@ -142,6 +142,7 @@ $wgExtraNamespaces = array(
 );
 
 $wgRestrictDisplayTitle = false;
+$wgAllowExternalImages = true;
 
 # Load appended local settings.
 require('LocalSettings-prepended.php');
