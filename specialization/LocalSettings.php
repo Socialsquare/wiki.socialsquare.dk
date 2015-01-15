@@ -143,6 +143,7 @@ $wgExtraNamespaces = array(
 
 $wgRestrictDisplayTitle = false;
 $wgAllowExternalImages = true;
+$wgAllowImageTag = true;
 
 # Load appended local settings.
 require('LocalSettings-prepended.php');
